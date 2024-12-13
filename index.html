@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações Meteorológicas</title>
+    <link rel="icon" href="imagens/sun_sunny_cloudy_cloud_weather_forecast_icon_124607.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <dialog id="cx_historico"> 
+        <h2 id="titulo_cx">Histórico de locais recém pesquisados:</h2> 
+        <section id="armazena"></section>
+        <button id="limpa" class="sty_bt_dialog">Limpa histórico</button>
+        <button id="copia" class="sty_bt_dialog">Copiar local</button>
+        <button id="remo_selecionado" class="sty_bt_dialog">Remover selecionado</button>  
+        <button id="fecha" class="sty_bt_dialog">Sair</button>  
+    </dialog>
+    <main id="c_principal">
+        <section id="p_lo_hrs" ></section>
+        <section id="weather"></section>
+        <section id="content_form">
+            <form id="form_busca">
+                <input type="text" id="input_busca" placeholder="Procure um local:">
+                <button id="bt_busca"><i class="fas fa-search"></i></button>
+            </form>
+        </section>
+        <section id="img"></section>
+        <button id="abre" class="sty_bt_dialog">Histórico de locais</button>
+    </main>
+    <script type="module" src="./script/index.js"></script>
+</body>
+</html>
