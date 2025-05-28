@@ -1,40 +1,111 @@
-Informações Meteorológicas em Tempo Real
 
-Este projeto tem como objetivo fornecer informações meteorológicas em tempo real para o usuário, exibindo a previsão do tempo atual de acordo com a sua localização geográfica. Utilizando recursos modernos como CSS para temas dinâmicos, TypeScript para a lógica de dados e API para pegar informações meteorológicas, ele oferece uma experiência interativa e responsiva. A interface se adapta automaticamente ao período do dia, alterando as cores e o fundo do site para refletir a manhã, tarde ou noite.
-Funcionalidades
+# 🌤️ Informações Meteorológicas em Tempo Real
 
-    Tema dinâmico: O fundo e as cores do site mudam dependendo do horário do dia, oferecendo uma experiência visual mais imersiva. O site utiliza três temas principais:
-        Manhã
-        Tarde
-        Noite
+Este é um projeto desenvolvido em **HTML + CSS + TypeScript**, hospedado na **Vercel**, que fornece informações meteorológicas em tempo real.  
+Além de exibir a previsão do tempo atual de acordo com a localização do usuário, o app oferece **temas dinâmicos (Manhã, Tarde e Noite)** e uma interface totalmente **responsiva e interativa**.
 
-    Pesquisa de clima: O usuário pode pesquisar pelo clima de qualquer cidade do mundo através de uma barra de pesquisa. A primeira cidade mostrada ao acessar o site é a do usuário, obtida pela geolocalização.
+---
 
-    Responsividade: O design é totalmente responsivo, adaptando-se a telas de diferentes tamanhos, desde dispositivos móveis até desktops.
+## 📌 Funcionalidades
 
-    Interface clara e acessível: Com fontes legíveis e botões interativos, a experiência do usuário foi otimizada para ser intuitiva e de fácil navegação.
+- ✅ Exibição do clima atual com dados detalhados
+- ✅ Detecção automática da localização do usuário com geolocalização
+- ✅ Pesquisa de clima por qualquer cidade do mundo
+- ✅ Alteração do tema do site (manhã, tarde ou noite) baseada no horário
+- ✅ Histórico de buscas com exibição opcional
+- ✅ Design responsivo e adaptável (Mobile, Tablet e Desktop)
+- ✅ Estilização moderna e acessível
+- ✅ Deploy completo na Vercel
 
-    Exibição de clima e dados adicionais: A previsão do tempo inclui dados como temperatura, umidade e condições do clima. Além disso, o histórico de buscas pode ser visualizado de forma fácil através de um painel de histórico que pode ser exibido ou ocultado.
+---
 
-Tecnologias Utilizadas
+## 🧪 Tecnologias Utilizadas
 
-    HTML5: Para estruturação semântica da página.
-    CSS3: Para estilização e design responsivo, utilizando variáveis de tema e animações.
-    JavaScript/TypeScript: Para implementar a lógica de busca do clima e interação com a API de clima.
-    API de clima: Para obter as informações meteorológicas em tempo real.
+| Ferramenta | Descrição |
+|------------|-----------|
+| [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML) | Estruturação semântica da página |
+| [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS) | Estilização responsiva e dinâmica |
+| [TypeScript](https://www.typescriptlang.org/) | Lógica e manipulação de dados meteorológicos |
+| [API Meteorológica](https://openweathermap.org/) | Obtenção de dados em tempo real |
+| [Vercel](https://vercel.com/) | Plataforma de deploy automatizado |
 
-Como Usar
+---
 
-    Clone o repositório:
+## 🖼️ Layout
 
+> 💻 Desktop | 📱 Mobile
+
+| Desktop             | Mobile              |
+|---------------------|---------------------|
+<div align="center">
+  <img src="./assets/clima-desktop.png" width="400" alt="Versão Desktop" />
+  <img src="./assets/clima-mobile.jpg" width="200" alt="Versão Mobile" />
+</div>
+
+---
+
+## 🔄 Temas Dinâmicos
+
+O site muda automaticamente seu tema visual com base no horário do dia:
+
+| Horário | Tema |
+|---------|------|
+| Manhã   | 🌅 Cores claras e suaves |
+| Tarde   | 🌞 Cores vibrantes e intensas |
+| Noite   | 🌙 Cores escuras e relaxantes |
+
+---
+
+## 📦 Instalação Local
+
+```
+# Clone o repositório
 git clone https://github.com/seu-usuario/informacoes-meteorologicas.git
+cd informacoes-meteorologicas
 
-Instale as dependências (caso utilize o TypeScript):
+# (Opcional) Instale dependências do TypeScript
+npm install
 
-    npm install
+# Execute localmente
+# Abra o arquivo index.html no navegador ou use um servidor local
+```
 
-    Execute o projeto localmente: Abra o arquivo index.html diretamente no seu navegador ou use um servidor local para exibir a página.
+---
 
-Contribuindo
+## 🔒 Validação de Entradas
 
-Se você deseja contribuir com o projeto, sinta-se à vontade para fazer um fork e submeter um pull request. Certifique-se de que seu código esteja bem documentado e siga as convenções de estilo do projeto.
+- Suporte a pesquisa de qualquer cidade do mundo.
+- Exibição clara de mensagens de erro caso a cidade não seja encontrada.
+- Uso de geolocalização para definir cidade inicial (caso o usuário permita).
+
+---
+
+## 🧹 Histórico de Buscas
+
+- Cada busca é salva no histórico, exibindo:
+  - Cidade pesquisada
+  - Temperatura atual
+  - Condições do tempo
+- Botão para limpar o histórico.
+
+---
+
+## 🌐 Deploy na Vercel
+
+[![Deploy na Vercel](https://vercel.com/button)](https://informacoes-meteriologigas.vercel.app/)
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são sempre bem-vindas!  
+Se você tiver ideias para melhorar o projeto ou identificar bugs, sinta-se à vontade para abrir uma issue ou pull request.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por: **Anathyon Erysson**  
+📫 anathyonerysson@protonmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/anathyonerysson/)
+
